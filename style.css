@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+}
+header {
+  background-image: url(assests/bg.jpg);
+  width: max(1000px, 100vw);
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  justify-content: center;
+  padding: 20px;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    7deg,
+    rgba(0, 0, 0, 0.85) 10%,
+    rgba(0, 0, 0, 0.8465) 17.25%,
+    rgba(0, 0, 0, 0.8361) 24.5%,
+    rgba(0, 0, 0, 0.8187) 31.75%,
+    rgba(0, 0, 0, 0.7944) 39%,
+    rgba(0, 0, 0, 0.7632) 46.25%,
+    rgba(0, 0, 0, 0.725) 53.5%,
+    rgba(0, 0, 0, 0.492) 60.75%,
+    rgba(0, 0, 0, 0.6556) 68%,
+    rgb(0, 0, 0) 75.25%,
+    rgba(0, 0, 0, 0.871) 82.5%,
+    rgba(0, 0, 0, 0.81) 89.75%,
+    rgb(0, 0, 0) 97%
+  );
+  z-index: 1;
+}
+nav {
+  background-color: transparent;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 5;
+}
+.button {
+  height: 32px;
+  width: 76px;
+  font-size: 15px;
+  border-radius: 5px;
+  color: antiquewhite;
+  background-color: rgb(229, 9, 20);
+  font-weight: bold;
+  border: 0;
+}
+.Language {
+  border-radius: 5px;
+  width: 100px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 5px;
+  color: rgb(252, 237, 237);
+  font-size: 16px;
+}
+.topright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.suboffer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 150px;
+  margin-left: -150px;
+}
+.suboffer .text {
+  color: rgb(244, 250, 255);
+  z-index: 5;
+  text-align: center;
+  max-width: 550px;
+}
+.largeText {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-align: center;
+}
+.medText {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.smallText {
+  text-align: center;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.emailInput {
+  padding: 10px;
+  width: 500px;
+  background-color: transparent;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: aliceblue;
+}
+.submitButton {
+  padding: 12px 30px; 
+  font-size: 18px;
+  font-weight: 900;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 280px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.submitButton img {
+  filter: brightness(0) invert(1); 
+}
+.input {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.endline
+  {
+    z-index: 10;
+    box-sizing: border-box;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: solid .25rem transparent;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border-bottom: none;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}

@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix India -Watch TV Shows</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="topleft">
+          <img class="logo" src="assests/logo.svg" alt="" width="150" />
+        </div>
+        <div class="topright">
+          <div>
+            <select class="Language" name="Language">
+              <option value="English">English</option>
+              <option value="Hindi">हिंदी</option>
+            </select>
+          </div>
+          <div>
+            <a href="https://www.netflix.com/login">
+              <button class="button redbg whitecolor">Sign In</button>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="suboffer">
+        <div class="text">
+          <h1 class="largeText">Unlimited movies, TV shows and more</h1>
+          <p class="medText">Starts at ₹149. Cancel at any time.</p>
+          <p class="smallText">
+            Ready to watch? Enter your email to create or restart your membership
+          </p>
+          <div class="input">
+            <input
+              type="email"
+              name="Email"
+              placeholder="Email Address"
+              class="emailInput"
+            />
+            <button class="submitButton">Get Started <img src="assests/chevron.png" alt="" width="25px" ></button>
+          </div>
+        </div>
+      </div>
+      <div class="endline">
+      </div>
+    </header>
+  </body>
 </html>
