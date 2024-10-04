@@ -49,6 +49,27 @@ nav {
   justify-content: space-around;
   position: relative;
   z-index: 5;
+  gap: 50px; 
+}
+@media only screen and (max-width: 1000px) {
+  nav {
+    gap: 40px; 
+  }
+}
+@media only screen and (max-width: 800px) {
+  nav {
+    gap: 30px; 
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    gap: 20px; 
+  }
+}
+@media only screen and (max-width: 400px) {
+  nav {
+    gap: 10px; 
+  }
 }
 .button {
   height: 32px;
@@ -66,8 +87,12 @@ nav {
   background-color: transparent;
   border: 1px solid #ccc;
   padding: 5px;
-  color: rgb(252, 237, 237);
+  color: white; 
   font-size: 16px;
+}
+.Language option {
+  background-color: rgb(255, 254, 254); 
+  color: rgb(0, 0, 0); 
 }
 .topright {
   display: flex;
@@ -135,32 +160,30 @@ nav {
 .submitButton img {
   filter: brightness(0) invert(1); 
 }
-.input {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+.BlackEnd {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; 
+  z-index: 12; 
+  background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  background-clip: padding-box;
+  margin-top: 0; 
 }
-.endline
-  {
-    z-index: 10;
-    box-sizing: border-box;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    margin: auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border: solid .25rem transparent;
-    border-top-left-radius: 50% 100%;
-    border-top-right-radius: 50% 100%;
-    border-bottom: none;
-    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
+.pink {
+  content: '';
+  position: absolute;
+  z-index: 11; 
+  right: 0;
+  bottom: 2px; 
+  left: 0;
+  border-radius: inherit;
+  margin-top: 0; 
+  background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+  height: 80px; 
+  border-top-left-radius: 50% 100%; 
+  border-top-right-radius: 50% 100%;
 }
