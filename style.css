@@ -271,7 +271,7 @@ nav {
 .trending{
   padding: 40px 339px; 
 }
-.trendingNow{
+.headText{
     font-size: 24px;
     font-weight: 550;
     color: #fff;
@@ -388,13 +388,13 @@ nav {
   height: 400px;
 }
 
-.prev{
-  background-image: url(assests/chevron.png);
-}
-
 .nav-btn-next{
   position: relative;
   left: 10px;
+}
+
+.nav-btn-next:hover, .nav-btn-prev:hover{
+  background-color: #383535;
 }
 
 .nav-btn-prev{
@@ -408,4 +408,10 @@ nav {
 
 .nav-btn-next img, .nav-btn-prev img {
   filter: brightness(0) invert(1);
+}
+
+.reasons{
+  position: relative;
+  top: -40px;
+  padding: 0px 339px; 
 }
