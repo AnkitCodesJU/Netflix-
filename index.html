@@ -61,18 +61,27 @@
           <option value="TV Shows">TV Shows</option>
         </select>
       </div>
-      <div class = "cards">
-        <button class = "sani">
-          <p class = "numLabel">1</p>
+      <div class="container">
+        <button id="prev" class="nav-btn-prev" onclick="prevButtons()">
+          <img src="assests/prev.png" alt="" width="10px" >
         </button>
-        <button class = "ulajh">
-          <p class = "numLabel">2</p>
-        </button>
-        <button class = "sector36">
-          <p class = "numLabel">3</p>
-        </button>
-        <button class = "fastx">
-          <p class = "numLabel">4</p>
+        
+        <div class="buttons-wrapper">
+          <div id="buttons-container" class="cards">
+            <button class="sani"><p class="numLabel">1</p></button>
+            <button class="ulajh"><p class="numLabel">2</p></button>
+            <button class="sector36"><p class="numLabel">3</p></button>
+            <button class="fastx"><p class="numLabel">4</p></button>
+            <button class="maharaja"><p class="numLabel">5</p></button>
+            <button class="evil"><p class="numLabel">6</p></button>
+            <button class="gifted"><p class="numLabel">7</p></button>
+            <button class="aay"><p class="numLabel">8</p></button>
+            <button class="mowgli"><p class="numLabel">9</p></button>
+            <button class="laapata"><p class="numLabel">10</p></button>
+          </div>
+        </div>
+        <button id="next" class="nav-btn-next" onclick="nextButtons()">
+          <img src="assests/next.png" alt="" width="10px" >
         </button>
       </div>
     </div>
