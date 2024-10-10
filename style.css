@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -49,6 +51,27 @@ nav {
   justify-content: space-around;
   position: relative;
   z-index: 5;
+  gap: 50px;
+}
+@media only screen and (max-width: 1000px) {
+  nav {
+    gap: 40px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  nav {
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  nav {
+    gap: 10px;
+  }
 }
 .button {
   height: 32px;
@@ -59,6 +82,11 @@ nav {
   background-color: rgb(229, 9, 20);
   font-weight: bold;
   border: 0;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  cursor: pointer; 
+}
+.button:hover {
+  background-color: rgb(133, 0, 7); 
 }
 .Language {
   border-radius: 5px;
@@ -66,8 +94,12 @@ nav {
   background-color: transparent;
   border: 1px solid #ccc;
   padding: 5px;
-  color: rgb(252, 237, 237);
+  color: white;
   font-size: 16px;
+}
+.Language option {
+  background-color: rgb(255, 254, 254);
+  color: rgb(0, 0, 0);
 }
 .topright {
   display: flex;
@@ -79,7 +111,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   padding: 150px;
   margin-left: -150px;
 }
@@ -119,7 +150,7 @@ nav {
   color: aliceblue;
 }
 .submitButton {
-  padding: 12px 30px; 
+  padding: 12px 30px;
   font-size: 18px;
   font-weight: 900;
   background-color: #e50914;
@@ -127,42 +158,115 @@ nav {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 280px; 
+  width: 280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.submitButton:hover {
+  background-color: rgb(133, 0, 7); 
+}
 .submitButton img {
-  filter: brightness(0) invert(1); 
+  filter: brightness(0) invert(1);
 }
-.input {
+.BlackEnd {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 12;
+  background: radial-gradient(
+      50% 500% at 50% -420%,
+      rgba(64, 97, 231, 0.4) 80%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    black;
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  background-clip: padding-box;
+  margin-top: 0;
+}
+.pink {
+  content: "";
+  position: absolute;
+  z-index: 11;
+  right: 0;
+  bottom: 2px;
+  left: 0;
+  border-radius: inherit;
+  margin-top: 0;
+  background: linear-gradient(
+    to right,
+    rgba(33, 13, 22, 1) 16%,
+    rgba(184, 40, 105, 1),
+    rgba(229, 9, 20, 1),
+    rgba(184, 40, 105, 1),
+    rgba(33, 13, 22, 1) 84%
+  );
+  height: 40px;
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+}
+.qna {
+  margin: 23px;
+  margin-left: 106px;
+  padding: 54px;
+  color: #ccc;
+  font-size: 23px;
+}
+.question {
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-top: 5px;
+  padding-left: -5px;
+  width: 80vw;
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(35, 34, 34);
+}.question:hover {
+  background-color: rgb(138, 130, 130);
 }
-.endline
-  {
-    z-index: 10;
-    box-sizing: border-box;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    margin: auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border: solid .25rem transparent;
-    border-top-left-radius: 50% 100%;
-    border-top-right-radius: 50% 100%;
-    border-bottom: none;
-    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
+.symbol {
+  font-weight: lighter;
+  font-size: 56px;
+  padding-top: -23px;
+  padding-bottom: -23px;
+}
+.answer {
+  padding: 23px;
+  margin-top: 5px;
+  padding-left: -5px;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(35, 34, 34);
+}
+.faq{
+  font-weight: bold;
+  font-size: 33px;
+  margin-bottom: 23px;
+}.hidden {
+  display: none;
+}
+.symbol p {
+  transition: transform 0.3s ease;
+}.rotated {
+  transform: rotate(45deg); 
+  transition: transform 0.3s ease; 
+}
+.elj7tfr3 {
+  fill: white;
+}
+@media only screen and (max-width: 600px) {
+  .emailInput {
+      width: 80%;
+  }
+  .submitButton {
+      width: 80%;
+  }
 }
 .trending{
   padding: 40px 339px; 
@@ -193,4 +297,47 @@ nav {
 .regionTrendDrop:focus, .showTrendDrop:focus{
     border: 3px solid #ccc;
 }
-
+.cards {
+  display: flex; 
+  justify-content: flex-start; 
+  width: 250%; 
+  max-width: 10000px; 
+}
+.sani, .ulajh, .sector36, .fastx{
+  height: 278px;
+  width: 200px;
+  margin-top: 30px;
+  margin-left: 40px;
+  border-radius: 10px;
+  border-color: black;
+  background-repeat: no-repeat;
+  transition-duration: 300ms;
+}
+.sani:hover, .ulajh:hover, .sector36:hover, .fastx:hover{
+  transform: scale(1.07);
+  transition-duration: 300ms;
+}
+.sani{
+  background-image: url(assests/SAVI.webp);
+}
+.ulajh{
+  background-image: url(assests/ULAJH.webp);
+}
+.sector36{
+  background-image: url(assests/SECTOR36.webp);
+}
+.fastx{
+  background-image: url(assests/FASTX.webp);
+}
+.numLabel{
+  position: relative;
+  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-seri;
+  left: -95px;
+  top: 75px;
+  font-size: 100px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  font-weight: 799;
+  color: black;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ccc;
+}
