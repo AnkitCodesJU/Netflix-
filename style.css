@@ -415,3 +415,12 @@ nav {
   top: -40px;
   padding: 0px 339px; 
 }
+
+.grad-box{
+
+  background: linear-gradient(135deg,#182045, #210f16);
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+
+}
