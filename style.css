@@ -1,3 +1,6 @@
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +8,7 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: black;
+  overflow-x: hidden;
 }
 header {
   background-image: url(assests/bg.jpg);
@@ -225,6 +229,7 @@ nav {
   background-color: rgb(35, 34, 34);
 }.question:hover {
   background-color: rgb(138, 130, 130);
+
 }
 .symbol {
   font-weight: lighter;
@@ -266,3 +271,351 @@ nav {
       width: 80%;
   }
 }
+.trending{
+  padding: 40px 159px; 
+}
+.headText{
+    font-size: 24px;
+    font-weight: 550;
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+.regionTrendDrop, .showTrendDrop{
+  padding: 9px ; 
+  border-radius: 5px;
+  width: 95px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: rgb(252, 237, 237);
+  font-size: 16px;
+
+}
+.symbol {
+  font-weight: lighter;
+  font-size: 56px;
+  padding-top: -23px;
+  padding-bottom: -23px;
+
+}
+.answer {
+  padding: 23px;
+  margin-top: 5px;
+  padding-left: -5px;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(35, 34, 34);
+}
+.faq{
+  font-weight: bold;
+  font-size: 33px;
+  margin-bottom: 23px;
+}.hidden {
+  display: none;
+}
+.symbol p {
+  transition: transform 0.3s ease;
+}.rotated {
+  transform: rotate(45deg); 
+  transition: transform 0.3s ease; 
+}
+.elj7tfr3 {
+  fill: white;
+}
+
+.sani, .ulajh, .sector36, .fastx, .aay, .evil, .laapata, .maharaja, .mowgli, .gifted{
+  height: 278px;
+  width: 200px;
+  margin-top: 30px;
+  margin-left: 40px;
+  border-radius: 10px;
+  border-color: black;
+  background-repeat: no-repeat;
+  transition-duration: 300ms;
+}
+.sani:hover, .ulajh:hover, .sector36:hover, .fastx:hover, .aay:hover, .evil:hover, .laapata:hover, .maharaja:hover, .mowgli:hover,
+ .gifted:hover{
+  transform: scale(1.07);
+  transition-duration: 300ms;
+}
+.sani{
+  background-image: url(assests/SAVI.webp);
+}
+.ulajh{
+  background-image: url(assests/ULAJH.webp);
+}
+.sector36{
+  background-image: url(assests/SECTOR36.webp);
+}
+.fastx{
+  background-image: url(assests/FASTX.webp);
+}
+.maharaja{
+  background-image: url(assests/MAHARAJA.webp);
+}
+.evil{
+  background-image: url(assests/EVIL.webp);
+}
+.gifted{
+  background-image: url(assests/GIFTED.webp);
+}
+.aay{
+  background-image: url(assests/AAY.webp);
+}
+.mowgli{
+  background-image: url(assests/MOWGLI.webp);
+}
+.laapata{
+  background-image: url(assests/LAAPATAA.webp);
+}
+.numLabel{
+  position: relative;
+  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-seri;
+  left: -95px;
+  top: 75px;
+  font-size: 100px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  font-weight: 799;
+  color: black;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ccc;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 1300px;
+}
+
+.nav-btn-next, .nav-btn-prev {
+  background-color: #232121;
+  border: none;
+  border-radius: 10px;
+  width: 110px;
+  height: 120px;
+  position: relative;
+  top: -25px;
+  padding: 0px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buttons-wrapper {
+  overflow: hidden;
+  width: 10000px; /* Adjust this to show a specific number of buttons, 4 in this case */
+}
+
+.cards {
+  display: flex;
+  justify-content: flex-start;
+  width: 10000px; /* Allow the container to be as wide as the buttons inside it */
+  transition: transform 0.5s ease-in-out;
+  height: 400px;
+}
+
+.nav-btn-next{
+  position: relative;
+  left: 10px;
+}
+
+.nav-btn-next:hover, .nav-btn-prev:hover{
+  background-color: #383535;
+}
+
+.nav-btn-prev{
+  position: relative;
+  left: -10px;
+}
+
+.nextOverlay{
+  background-image: url(assests/chevron.png);
+}
+
+.nav-btn-next img, .nav-btn-prev img {
+  filter: brightness(0) invert(1);
+}
+
+.reasons{
+  position: relative;
+  width: max-content;
+  top: -40px;
+  padding: 0px 159px; 
+  display: flex;
+  justify-content: center;
+  
+}
+
+.grad-box{
+
+  background: linear-gradient(135deg,#182045, #210f16);
+  position: relative;
+  top: 70px;
+  left: -230px;
+  height: 300px;
+  margin-right: 20px; 
+  width: 300px;
+  border-radius: 20px;
+
+}
+
+.tv-icon{
+  position: relative;
+  top: 210px;
+  left: 220px;
+}
+
+.boxHead{
+
+  font-size: 24px;
+  font-weight: 550;
+  color: #fff;
+  position: relative;
+  top: -50px;
+  left: 20px;
+  margin-right: 35px;
+
+}
+
+.boxText{
+
+  font-size: 16px;
+  font-weight: 550;
+  color: #979797;
+  position: relative;
+  top: -30px;
+  left: 20px;
+  margin-right: 35px;
+
+}
+
+.footer{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.endText{
+
+  color: rgb(244, 250, 255);
+  align-content: center;
+  text-align: center;
+
+}
+
+.input2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+.emailInput2 {
+  padding: 10px;
+  width: 500px;
+  background-color: transparent;
+  font-size: 16px;
+  border: 1px solid #a7a6a6;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: aliceblue;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+  .emailInput2 {
+      width: 100%;
+  }
+  .submitButton {
+      width: 50%;
+  }
+}
+
+.submitButton2 {
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: 900;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.submitButton2:hover {
+  background-color: rgb(133, 0, 7); 
+}
+.submitButton2 img {
+  filter: brightness(0) invert(1);
+}
+
+.questions-call{
+
+  font-size: 17px;
+  font-weight: 550;
+  color: #979797;
+  padding-top: 50px;
+  padding-left: 160px;
+
+}
+
+.final-links{
+
+  padding-top: 50px;
+  padding-left: 160px;
+  margin-bottom: 50px;
+  margin-right: 30px;
+  display: inline-block;
+
+}
+
+.foot-link{
+
+  color: #979797;
+
+}
+
+.foot-link:active{
+
+  color: #e50914;
+  text-decoration: underline;
+  text-decoration-color: #979797;
+
+}
+
+.foot-lang{
+
+  padding-left: 160px;
+  margin-bottom: 40px;
+
+}
+
+.next-text-div{
+
+  padding-left: 160px;
+
+}
+
+.net-text{
+
+  color: #979797;
+  padding-left: 160px;
+  margin-bottom: 100px;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .emailInput {
+      width: 80%;
+  }
+  .submitButton {
+      width: 80%;
+  }
+}
+
