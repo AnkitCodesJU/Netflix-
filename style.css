@@ -229,7 +229,6 @@ nav {
   background-color: rgb(35, 34, 34);
 }.question:hover {
   background-color: rgb(138, 130, 130);
-
 }
 .symbol {
   font-weight: lighter;
@@ -289,40 +288,16 @@ nav {
   border: 1px solid #ccc;
   color: rgb(252, 237, 237);
   font-size: 16px;
-
 }
-.symbol {
-  font-weight: lighter;
-  font-size: 56px;
-  padding-top: -23px;
-  padding-bottom: -23px;
-
+.showTrendDrop{
+    width: 120px;
+    margin-left: 20px;
 }
-.answer {
-  padding: 23px;
-  margin-top: 5px;
-  padding-left: -5px;
-  width: 80vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(35, 34, 34);
+.regionTrendDrop option, .showTrendDrop option{
+    color: black; 
 }
-.faq{
-  font-weight: bold;
-  font-size: 33px;
-  margin-bottom: 23px;
-}.hidden {
-  display: none;
-}
-.symbol p {
-  transition: transform 0.3s ease;
-}.rotated {
-  transform: rotate(45deg); 
-  transition: transform 0.3s ease; 
-}
-.elj7tfr3 {
-  fill: white;
+.regionTrendDrop:focus, .showTrendDrop:focus{
+    border: 3px solid #ccc;
 }
 
 .sani, .ulajh, .sector36, .fastx, .aay, .evil, .laapata, .maharaja, .mowgli, .gifted{
@@ -609,13 +584,3 @@ nav {
   margin-bottom: 100px;
 
 }
-
-@media only screen and (max-width: 600px) {
-  .emailInput {
-      width: 80%;
-  }
-  .submitButton {
-      width: 80%;
-  }
-}
-
