@@ -1,5 +1,6 @@
 
 
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: black;
+  overflow-x: hidden;
 }
 header {
   background-image: url(assests/bg.jpg);
@@ -269,7 +271,7 @@ nav {
   }
 }
 .trending{
-  padding: 40px 339px; 
+  padding: 40px 159px; 
 }
 .headText{
     font-size: 24px;
@@ -359,7 +361,7 @@ nav {
 .container {
   display: flex;
   align-items: center;
-  width: 1100px;
+  width: 1300px;
 }
 
 .nav-btn-next, .nav-btn-prev {
@@ -412,15 +414,173 @@ nav {
 
 .reasons{
   position: relative;
+  width: max-content;
   top: -40px;
-  padding: 0px 339px; 
+  padding: 0px 159px; 
+  display: flex;
+  justify-content: center;
+  
 }
 
 .grad-box{
 
   background: linear-gradient(135deg,#182045, #210f16);
+  position: relative;
+  top: 70px;
+  left: -230px;
   height: 300px;
+  margin-right: 20px; 
   width: 300px;
   border-radius: 20px;
+
+}
+
+.tv-icon{
+  position: relative;
+  top: 210px;
+  left: 220px;
+}
+
+.boxHead{
+
+  font-size: 24px;
+  font-weight: 550;
+  color: #fff;
+  position: relative;
+  top: -50px;
+  left: 20px;
+  margin-right: 35px;
+
+}
+
+.boxText{
+
+  font-size: 16px;
+  font-weight: 550;
+  color: #979797;
+  position: relative;
+  top: -30px;
+  left: 20px;
+  margin-right: 35px;
+
+}
+
+.footer{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.endText{
+
+  color: rgb(244, 250, 255);
+  align-content: center;
+  text-align: center;
+
+}
+
+.input2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+.emailInput2 {
+  padding: 10px;
+  width: 500px;
+  background-color: transparent;
+  font-size: 16px;
+  border: 1px solid #a7a6a6;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: aliceblue;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+  .emailInput2 {
+      width: 100%;
+  }
+  .submitButton {
+      width: 50%;
+  }
+}
+
+.submitButton2 {
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: 900;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.submitButton2:hover {
+  background-color: rgb(133, 0, 7); 
+}
+.submitButton2 img {
+  filter: brightness(0) invert(1);
+}
+
+.questions-call{
+
+  font-size: 17px;
+  font-weight: 550;
+  color: #979797;
+  padding-top: 50px;
+  padding-left: 160px;
+
+}
+
+.final-links{
+
+  padding-top: 50px;
+  padding-left: 160px;
+  margin-bottom: 50px;
+  margin-right: 30px;
+  display: inline-block;
+
+}
+
+.foot-link{
+
+  color: #979797;
+
+}
+
+.foot-link:active{
+
+  color: #e50914;
+  text-decoration: underline;
+  text-decoration-color: #979797;
+
+}
+
+.foot-lang{
+
+  padding-left: 160px;
+  margin-bottom: 40px;
+
+}
+
+.next-text-div{
+
+  padding-left: 160px;
+
+}
+
+.net-text{
+
+  color: #979797;
+  padding-left: 160px;
+  margin-bottom: 100px;
 
 }
