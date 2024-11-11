@@ -8,6 +8,7 @@ questions.forEach((question) => {
     });
 });
 
+
 // Number of buttons per view
 const buttonsPerView = 4;
 
@@ -46,3 +47,4 @@ function prevButtons() {
 
 // Initialize by hiding prev button
 updateButtons();
+
